@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 0
   Caption = 'Form1'
   ClientHeight = 606
-  ClientWidth = 836
+  ClientWidth = 938
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,11 +16,12 @@ object Form1: TForm1
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 836
+    Width = 938
     Height = 606
     Align = alClient
     TabOrder = 0
     ExplicitLeft = -8
+    ExplicitWidth = 836
     object FxLabel1: TFxLabel
       Left = 14
       Top = 13
@@ -210,6 +211,7 @@ object Form1: TForm1
       ImeMode = imDisable
       ParentFont = False
       TabOrder = 2
+      OnExit = edtSendTypeExit
       Alignment = taLeftJustify
       ActiveColor = clInfoBk
       ActiveBorderStyle = bsSingle
@@ -232,6 +234,7 @@ object Form1: TForm1
       MaxLengthType = mltByte
       WantTabs = False
       UseOptions = [uoActiveEffects]
+      OnPressed = edtSendTypePressed
     end
     object edtKenmei: TFxEdit
       Left = 14
@@ -348,17 +351,17 @@ object Form1: TForm1
       WantTabs = False
     end
     object vstList: TVirtualStringTree
-      AlignWithMargins = True
       Left = 27
-      Top = 304
+      Top = 298
       Width = 808
       Height = 224
-      Margins.Left = 13
+      Margins.Left = 0
       Margins.Top = 0
-      Margins.Right = 13
-      Margins.Bottom = 5
+      Margins.Right = 0
+      Margins.Bottom = 0
       Align = alCustom
       BevelInner = bvNone
+      Color = 16514489
       Colors.FocusedSelectionColor = 15780262
       Colors.FocusedSelectionBorderColor = 15780262
       Colors.GridLineColor = clSilver
@@ -384,7 +387,7 @@ object Form1: TForm1
       LineStyle = lsSolid
       Margin = 3
       ParentFont = False
-      RootNodeCount = 20
+      RootNodeCount = 10
       TabOrder = 7
       TreeOptions.MiscOptions = [toAcceptOLEDrop, toCheckSupport, toFullRepaintOnResize, toGridExtensions, toInitOnSave, toReportMode, toToggleOnDblClick, toWheelPanning]
       TreeOptions.PaintOptions = [toHideFocusRect, toShowButtons, toShowDropmark, toShowHorzGridLines, toShowVertGridLines, toThemeAware, toUseBlendedImages, toAlwaysHideSelection]
@@ -425,8 +428,16 @@ object Form1: TForm1
           MinWidth = 300
           Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus, coUseCaptionAlignment, coEditable]
           Position = 4
-          Width = 362
+          Width = 300
           WideText = #12486#12473#12488'5'
+        end
+        item
+          Position = 5
+          WideText = #12486#12473#12488'6'
+        end
+        item
+          Position = 6
+          WideText = #12486#12473#12488'7'
         end>
     end
   end
