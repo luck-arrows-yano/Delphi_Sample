@@ -20,8 +20,6 @@ object Form1: TForm1
     Height = 606
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = -8
-    ExplicitWidth = 836
     object FxLabel1: TFxLabel
       Left = 14
       Top = 13
@@ -69,6 +67,50 @@ object Form1: TForm1
     object lblSendTypeName: TFxLabel
       Left = 54
       Top = 48
+      Width = 144
+      Height = 22
+      AutoSize = False
+      Caption = #12362#30693#12425#12379
+      Color = 16770009
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      ShowAccelChar = False
+      Transparent = True
+      Layout = tlCenter
+      BorderStyle = lbsSingle
+      BorderColor = clSilver
+      Margin.Top = 1
+    end
+    object FxLabel2: TFxLabel
+      Left = 246
+      Top = 47
+      Width = 144
+      Height = 22
+      AutoSize = False
+      Caption = #12362#30693#12425#12379
+      Color = 16770009
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      ShowAccelChar = False
+      Transparent = True
+      Layout = tlCenter
+      BorderStyle = lbsSingle
+      BorderColor = clSilver
+      Margin.Top = 1
+    end
+    object FxLabel3: TFxLabel
+      Left = 446
+      Top = 46
       Width = 144
       Height = 22
       AutoSize = False
@@ -239,7 +281,7 @@ object Form1: TForm1
     object edtKenmei: TFxEdit
       Left = 14
       Top = 125
-      Width = 455
+      Width = 184
       Height = 22
       Cursor = crIBeam
       Font.Charset = DEFAULT_CHARSET
@@ -351,9 +393,9 @@ object Form1: TForm1
       WantTabs = False
     end
     object vstList: TVirtualStringTree
-      Left = 27
+      Left = 14
       Top = 298
-      Width = 808
+      Width = 878
       Height = 224
       Margins.Left = 0
       Margins.Top = 0
@@ -374,7 +416,7 @@ object Form1: TForm1
       Font.Height = -13
       Font.Name = #65325#65331' '#12468#12471#12483#12463
       Font.Style = []
-      Header.AutoSizeIndex = 4
+      Header.AutoSizeIndex = 0
       Header.Background = clWhite
       Header.Font.Charset = SHIFTJIS_CHARSET
       Header.Font.Color = clWindowText
@@ -382,8 +424,7 @@ object Form1: TForm1
       Header.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
       Header.Font.Style = []
       Header.Height = 26
-      Header.MainColumn = 1
-      Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoOwnerDraw, hoShowSortGlyphs, hoVisible]
+      Header.Options = [hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
       LineStyle = lsSolid
       Margin = 3
       ParentFont = False
@@ -392,53 +433,238 @@ object Form1: TForm1
       TreeOptions.MiscOptions = [toAcceptOLEDrop, toCheckSupport, toFullRepaintOnResize, toGridExtensions, toInitOnSave, toReportMode, toToggleOnDblClick, toWheelPanning]
       TreeOptions.PaintOptions = [toHideFocusRect, toShowButtons, toShowDropmark, toShowHorzGridLines, toShowVertGridLines, toThemeAware, toUseBlendedImages, toAlwaysHideSelection]
       TreeOptions.SelectionOptions = [toExtendedFocus, toFullRowSelect]
-      ExplicitLeft = 14
       Columns = <
         item
           Alignment = taCenter
           Position = 0
-          Width = 75
+          Width = 100
           WideText = #12486#12473#12488'1'
         end
         item
           Alignment = taCenter
-          CaptionAlignment = taCenter
-          Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus, coUseCaptionAlignment, coEditable]
           Position = 1
           Width = 100
           WideText = #12486#12473#12488'2'
         end
         item
           Alignment = taCenter
-          CaptionAlignment = taCenter
-          Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus, coUseCaptionAlignment, coEditable]
           Position = 2
           Width = 100
           WideText = #12486#12473#12488'3'
         end
         item
           Alignment = taCenter
-          CaptionAlignment = taCenter
-          Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus, coUseCaptionAlignment, coEditable]
           Position = 3
-          Width = 150
+          Width = 100
           WideText = #12486#12473#12488'4'
-        end
-        item
-          MinWidth = 300
-          Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus, coUseCaptionAlignment, coEditable]
-          Position = 4
-          Width = 300
-          WideText = #12486#12473#12488'5'
-        end
-        item
-          Position = 5
-          WideText = #12486#12473#12488'6'
-        end
-        item
-          Position = 6
-          WideText = #12486#12473#12488'7'
         end>
+    end
+    object FxReferenceEdit1: TFxReferenceEdit
+      Left = 206
+      Top = 47
+      Width = 39
+      Height = 22
+      Cursor = crIBeam
+      Font.Charset = SHIFTJIS_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
+      Font.Style = []
+      ImeMode = imDisable
+      ParentFont = False
+      TabOrder = 8
+      OnExit = edtSendTypeExit
+      Alignment = taLeftJustify
+      ActiveColor = clInfoBk
+      ActiveBorderStyle = bsSingle
+      AutoSize = False
+      BorderColor = clBlack
+      BorderStyle = bsSingle
+      Color = clWindow
+      Ctl3D = True
+      DisableColor = clWindow
+      DisableTextColor = clWindowText
+      ParentColor = False
+      ParentCtl3D = False
+      MoveByEnter = True
+      MoveByCursor = True
+      CharFilter.Enable = True
+      CharFilter.GroupAlphabet = False
+      Margin.Top = 2
+      Text = '1'
+      MaxLength = 2
+      MaxLengthType = mltByte
+      WantTabs = False
+      UseOptions = [uoActiveEffects]
+      OnPressed = edtSendTypePressed
+    end
+    object FxReferenceEdit2: TFxReferenceEdit
+      Left = 406
+      Top = 46
+      Width = 39
+      Height = 22
+      Cursor = crIBeam
+      Font.Charset = SHIFTJIS_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
+      Font.Style = []
+      ImeMode = imDisable
+      ParentFont = False
+      TabOrder = 9
+      OnExit = edtSendTypeExit
+      Alignment = taLeftJustify
+      ActiveColor = clInfoBk
+      ActiveBorderStyle = bsSingle
+      AutoSize = False
+      BorderColor = clBlack
+      BorderStyle = bsSingle
+      Color = clWindow
+      Ctl3D = True
+      DisableColor = clWindow
+      DisableTextColor = clWindowText
+      ParentColor = False
+      ParentCtl3D = False
+      MoveByEnter = True
+      MoveByCursor = True
+      CharFilter.Enable = True
+      CharFilter.GroupAlphabet = False
+      Margin.Top = 2
+      Text = '1'
+      MaxLength = 2
+      MaxLengthType = mltByte
+      WantTabs = False
+      UseOptions = [uoActiveEffects]
+      OnPressed = edtSendTypePressed
+    end
+    object FxReferenceDateEdit1: TFxReferenceDateEdit
+      Left = 206
+      Top = 82
+      Width = 118
+      Height = 22
+      Cursor = crIBeam
+      Font.Charset = SHIFTJIS_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
+      Font.Style = []
+      ImeMode = imDisable
+      ParentFont = False
+      TabOrder = 10
+      Alignment = taCenter
+      ActiveColor = clInfoBk
+      ActiveBorderStyle = bsSingle
+      BorderColor = clGray
+      BorderStyle = bsSingle
+      Color = clWindow
+      Ctl3D = False
+      DisableColor = clWindow
+      DisableTextColor = clWindowText
+      ParentColor = False
+      ParentCtl3D = True
+      MoveByEnter = False
+      MoveByCursor = True
+      Margin.Bottom = 1
+      Margin.Top = 1
+      Text = ''
+      MaxLength = 10
+      MaxLengthType = mltByte
+      WantTabs = False
+      UseOptions = [uoActiveEffects]
+      ConverErrorMessage = '?'
+      CompletionMode = modeCurrent
+      CalendarFont.Charset = SHIFTJIS_CHARSET
+      CalendarFont.Color = clWindowText
+      CalendarFont.Height = -12
+      CalendarFont.Name = #65325#65331' '#65328#12468#12471#12483#12463
+      CalendarFont.Style = []
+      OpenShortCut = 32
+    end
+    object FxComboBox1: TFxComboBox
+      Left = 325
+      Top = 82
+      Width = 46
+      Height = 22
+      TabOrder = 11
+      CharCase = ecNormal
+      DroppedWidth = 0
+      DroppedDown = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
+      Font.Style = []
+      ImeMode = imDontCare
+      ImeName = ''
+      ItemHeight = 13
+      MaxLength = 0
+      MaxLengthType = mltByte
+      MoveByEnter = False
+      MoveByCursor = True
+      ParentBiDiMode = True
+      ParentFont = False
+      ParentShowHint = True
+      ShowHint = False
+      Sorted = False
+      Text = ''
+      KanaBuffering = False
+      WantTabs = False
+      Style = csDropDownList
+      Items.Strings = (
+        '0'
+        '1'
+        '2'
+        '3'
+        '4'
+        '5'
+        '6'
+        '7'
+        '8'
+        '9'
+        '10'
+        '11'
+        '12'
+        '13'
+        '14'
+        '15'
+        '16'
+        '17'
+        '18'
+        '19'
+        '20'
+        '21'
+        '22'
+        '23')
+      ActiveColor = clInfoBk
+      ActiveBorderStyle = bsSingle
+      BorderColor = clBlack
+      BorderStyle = bsSingle
+      Color = clWindow
+      Ctl3D = True
+      Margin.Top = 1
+      ParentColor = False
+      ParentCtl3D = False
+      TabStop = True
+    end
+    object RzBitBtn1: TRzBitBtn
+      Left = 814
+      Top = 271
+      Width = 78
+      Height = 24
+      Caption = #36861#21152
+      DoubleBuffered = True
+      Font.Charset = SHIFTJIS_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
+      Font.Style = []
+      ParentDoubleBuffered = False
+      ParentFont = False
+      TabOrder = 12
+      TabStop = False
+      ImageIndex = 12
+      Margin = 8
+      Spacing = 10
     end
   end
 end
