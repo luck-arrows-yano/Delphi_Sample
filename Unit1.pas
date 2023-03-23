@@ -22,6 +22,8 @@ type
     btnStaffAdd: TRzBitBtn;
     tglRange: TFxToggleGroup;
     vstList: TVirtualStringTree;
+    procedure edtSendTypeExit(Sender: TObject);
+    procedure edtSendTypePressed(Sender: TObject);
   private
     { Private êÈåæ }
   public
@@ -34,5 +36,21 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.edtSendTypeExit(Sender: TObject);
+begin
+  if edtSendType.Text = '' then
+  begin
+    lblSendTypeName.Caption := '';
+  end else
+  begin
+
+  end;
+end;
+
+procedure TForm1.edtSendTypePressed(Sender: TObject);
+begin
+  ShowMessage('aaaa');
+end;
 
 end.
