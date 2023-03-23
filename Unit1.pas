@@ -22,6 +22,13 @@ type
     btnStaffAdd: TRzBitBtn;
     tglRange: TFxToggleGroup;
     vstList: TVirtualStringTree;
+    FxReferenceEdit1: TFxReferenceEdit;
+    FxLabel2: TFxLabel;
+    FxLabel3: TFxLabel;
+    FxReferenceEdit2: TFxReferenceEdit;
+    FxReferenceDateEdit1: TFxReferenceDateEdit;
+    FxComboBox1: TFxComboBox;
+    RzBitBtn1: TRzBitBtn;
     procedure edtSendTypeExit(Sender: TObject);
     procedure edtSendTypePressed(Sender: TObject);
   private
