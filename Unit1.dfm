@@ -20,6 +20,7 @@ object Form1: TForm1
     Height = 606
     Align = alClient
     TabOrder = 0
+    ExplicitLeft = 8
     object FxLabel1: TFxLabel
       Left = 14
       Top = 13
@@ -364,6 +365,7 @@ object Form1: TForm1
       ParentFont = False
       TabOrder = 5
       TabStop = False
+      OnClick = btnStaffAddClick
       ImageIndex = 12
       Margin = 8
       Spacing = 10
@@ -665,6 +667,115 @@ object Form1: TForm1
       ImageIndex = 12
       Margin = 8
       Spacing = 10
+    end
+    object FxReferenceDateEdit2: TFxReferenceDateEdit
+      Left = 406
+      Top = 98
+      Width = 118
+      Height = 22
+      Cursor = crIBeam
+      Font.Charset = SHIFTJIS_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
+      Font.Style = []
+      ImeMode = imDisable
+      ParentFont = False
+      TabOrder = 13
+      Alignment = taCenter
+      ActiveColor = clInfoBk
+      ActiveBorderStyle = bsSingle
+      BorderColor = clGray
+      BorderStyle = bsSingle
+      Color = clWindow
+      Ctl3D = False
+      DisableColor = clWindow
+      DisableTextColor = clWindowText
+      ParentColor = False
+      ParentCtl3D = True
+      MoveByEnter = False
+      MoveByCursor = True
+      Margin.Bottom = 1
+      Margin.Top = 1
+      Text = ''
+      MaxLength = 10
+      MaxLengthType = mltByte
+      WantTabs = False
+      UseOptions = [uoActiveEffects]
+      ConverErrorMessage = '?'
+      CompletionMode = modeCurrent
+      CalendarFont.Charset = SHIFTJIS_CHARSET
+      CalendarFont.Color = clWindowText
+      CalendarFont.Height = -12
+      CalendarFont.Name = #65325#65331' '#65328#12468#12471#12483#12463
+      CalendarFont.Style = []
+      OpenShortCut = 32
+    end
+    object FxComboBox2: TFxComboBox
+      Left = 525
+      Top = 98
+      Width = 46
+      Height = 22
+      TabOrder = 14
+      CharCase = ecNormal
+      DroppedWidth = 0
+      DroppedDown = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
+      Font.Style = []
+      ImeMode = imDontCare
+      ImeName = ''
+      ItemHeight = 13
+      MaxLength = 0
+      MaxLengthType = mltByte
+      MoveByEnter = False
+      MoveByCursor = True
+      ParentBiDiMode = True
+      ParentFont = False
+      ParentShowHint = True
+      ShowHint = False
+      Sorted = False
+      Text = ''
+      KanaBuffering = False
+      WantTabs = False
+      Style = csDropDownList
+      Items.Strings = (
+        '0'
+        '1'
+        '2'
+        '3'
+        '4'
+        '5'
+        '6'
+        '7'
+        '8'
+        '9'
+        '10'
+        '11'
+        '12'
+        '13'
+        '14'
+        '15'
+        '16'
+        '17'
+        '18'
+        '19'
+        '20'
+        '21'
+        '22'
+        '23')
+      ActiveColor = clInfoBk
+      ActiveBorderStyle = bsSingle
+      BorderColor = clBlack
+      BorderStyle = bsSingle
+      Color = clWindow
+      Ctl3D = True
+      Margin.Top = 1
+      ParentColor = False
+      ParentCtl3D = False
+      TabStop = True
     end
   end
 end
