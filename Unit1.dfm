@@ -20,6 +20,8 @@ object Form1: TForm1
     Height = 606
     Align = alClient
     TabOrder = 0
+    ExplicitLeft = -8
+    ExplicitWidth = 836
     object FxLabel1: TFxLabel
       Left = 14
       Top = 13
@@ -67,28 +69,6 @@ object Form1: TForm1
     object lblSendTypeName: TFxLabel
       Left = 54
       Top = 48
-      Width = 144
-      Height = 22
-      AutoSize = False
-      Caption = #12362#30693#12425#12379
-      Color = 16770009
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -13
-      Font.Name = #65325#65331' '#12468#12471#12483#12463
-      Font.Style = []
-      ParentColor = False
-      ParentFont = False
-      ShowAccelChar = False
-      Transparent = True
-      Layout = tlCenter
-      BorderStyle = lbsSingle
-      BorderColor = clSilver
-      Margin.Top = 1
-    end
-    object FxLabel2: TFxLabel
-      Left = 691
-      Top = 47
       Width = 144
       Height = 22
       AutoSize = False
@@ -394,7 +374,7 @@ object Form1: TForm1
       Font.Height = -13
       Font.Name = #65325#65331' '#12468#12471#12483#12463
       Font.Style = []
-      Header.AutoSizeIndex = -1
+      Header.AutoSizeIndex = 4
       Header.Background = clWhite
       Header.Font.Charset = SHIFTJIS_CHARSET
       Header.Font.Color = clWindowText
@@ -412,6 +392,7 @@ object Form1: TForm1
       TreeOptions.MiscOptions = [toAcceptOLEDrop, toCheckSupport, toFullRepaintOnResize, toGridExtensions, toInitOnSave, toReportMode, toToggleOnDblClick, toWheelPanning]
       TreeOptions.PaintOptions = [toHideFocusRect, toShowButtons, toShowDropmark, toShowHorzGridLines, toShowVertGridLines, toThemeAware, toUseBlendedImages, toAlwaysHideSelection]
       TreeOptions.SelectionOptions = [toExtendedFocus, toFullRowSelect]
+      ExplicitLeft = 14
       Columns = <
         item
           Alignment = taCenter
@@ -444,111 +425,20 @@ object Form1: TForm1
           WideText = #12486#12473#12488'4'
         end
         item
+          MinWidth = 300
+          Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus, coUseCaptionAlignment, coEditable]
           Position = 4
-          WideText = #12486#12473#12488'6'
+          Width = 300
+          WideText = #12486#12473#12488'5'
         end
         item
           Position = 5
-          WideText = #12486#12473#12488'7'
+          WideText = #12486#12473#12488'6'
         end
         item
           Position = 6
-          Width = 262
+          WideText = #12486#12473#12488'7'
         end>
-    end
-    object FxReferenceEdit1: TFxReferenceEdit
-      Left = 651
-      Top = 47
-      Width = 39
-      Height = 22
-      Cursor = crIBeam
-      Font.Charset = SHIFTJIS_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = #65325#65331' '#12468#12471#12483#12463
-      Font.Style = []
-      ImeMode = imDisable
-      ParentFont = False
-      TabOrder = 8
-      OnExit = edtSendTypeExit
-      Alignment = taLeftJustify
-      ActiveColor = clInfoBk
-      ActiveBorderStyle = bsSingle
-      AutoSize = False
-      BorderColor = clBlack
-      BorderStyle = bsSingle
-      Color = clWindow
-      Ctl3D = True
-      DisableColor = clWindow
-      DisableTextColor = clWindowText
-      ParentColor = False
-      ParentCtl3D = False
-      MoveByEnter = True
-      MoveByCursor = True
-      CharFilter.Enable = True
-      CharFilter.GroupAlphabet = False
-      Margin.Top = 2
-      Text = '1'
-      MaxLength = 2
-      MaxLengthType = mltByte
-      WantTabs = False
-      UseOptions = [uoActiveEffects]
-      OnPressed = edtSendTypePressed
-    end
-    object FxEdit1: TFxEdit
-      Left = 472
-      Top = 238
-      Width = 305
-      Height = 22
-      Cursor = crIBeam
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = #65325#65331' '#12468#12471#12483#12463
-      Font.Style = []
-      ImeMode = imHira
-      ParentFont = False
-      TabOrder = 9
-      Alignment = taLeftJustify
-      ActiveColor = clInfoBk
-      ActiveBorderStyle = bsSingle
-      BorderColor = clBlack
-      BorderStyle = bsSingle
-      Color = clWindow
-      Ctl3D = True
-      DisableColor = clWindow
-      DisableTextColor = clWindowText
-      ParentColor = False
-      ParentCtl3D = True
-      MaxLength = 64
-      MaxLengthType = mltByte
-      MoveByEnter = True
-      MoveByCursor = True
-      Margin.Top = 2
-      Text = #12486#12473#12488
-      KanaBuffering = True
-      WantTabs = False
-      UseOptions = [uoActiveEffects]
-    end
-    object RzBitBtn1: TRzBitBtn
-      Left = 27
-      Top = 538
-      Width = 78
-      Height = 24
-      Caption = #36861#21152
-      DoubleBuffered = True
-      Font.Charset = SHIFTJIS_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = #65325#65331' '#12468#12471#12483#12463
-      Font.Style = []
-      ParentDoubleBuffered = False
-      ParentFont = False
-      TabOrder = 10
-      TabStop = False
-      ImageIndex = 12
-      Margin = 8
-      Spacing = 10
     end
   end
 end
