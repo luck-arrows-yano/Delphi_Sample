@@ -29,8 +29,11 @@ type
     FxReferenceDateEdit1: TFxReferenceDateEdit;
     FxComboBox1: TFxComboBox;
     RzBitBtn1: TRzBitBtn;
+    FxReferenceDateEdit2: TFxReferenceDateEdit;
+    FxComboBox2: TFxComboBox;
     procedure edtSendTypeExit(Sender: TObject);
     procedure edtSendTypePressed(Sender: TObject);
+    procedure btnStaffAddClick(Sender: TObject);
   private
     { Private êÈåæ }
   public
@@ -43,6 +46,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.btnStaffAddClick(Sender: TObject);
+begin
+ShowMessage('aa');
+end;
 
 procedure TForm1.edtSendTypeExit(Sender: TObject);
 begin
